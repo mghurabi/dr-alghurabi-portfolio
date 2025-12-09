@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohammed Al‑Ghurabi, MBBS – Medical Professional in Riyadh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mohammed Al‑Ghurabi, MBBS – a Riyadh-based medical professional helping patients, families, and healthcare organizations make clearer, evidence-based decisions.">
+  <style>
+    /* Base reset and typography */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #111111;
+      background-color: #ffffff;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    main {
+      padding: 0 1.5rem;
+    }
+
+    /* Layout helpers */
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    /* Header and navigation */
+    header {
+      border-bottom: 1px solid #e0e0e0;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 0;
+      background: #000;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      z-index: 2000;
+    }
+
+    .skip-link:focus {
+      left: 1rem;
+      top: 1rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.1rem;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background: #111111;
+      transition: width 0.2s ease-out;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a:focus-visible::after {
+      width: 100%;
+    }
+
+    .nav-contacts {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: #555555;
+    }
+
+    .nav-contacts a {
+      white-space: nowrap;
+    }
+
+    /* Mobile nav */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .nav-links,
+      .nav-contacts {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+      }
+
+      .nav-links.open,
+      .nav-contacts.open {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: inline-block;
+        margin-left: auto;
+      }
+    }
+
+    /* Hero section */
+    .hero {
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .hero-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+      color: #777777;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin: 0 0 1rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: #444444;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 0.6rem 1.25rem;
+      font-size: 0.9rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: background 0.15s ease-out, color 0.15s ease-out, border-color 0.15s ease-out,
+        transform 0.08s ease-out;
+    }
+
+    .btn-primary {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
+      background: #2b2b2b;
+      border-color: #2b2b2b;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: #111111;
+      border-color: #cccccc;
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus-visible {
+      background: #f7f7f7;
+      transform: translateY(-1px);
+    }
+
+    .hero-meta {
+      font-size: 0.9rem;
+      color: #666666;
+    }
+
+    .hero-meta span {
+      display: inline-block;
+      margin-right: 0.75rem;
+    }
+
+    .hero-photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      border-radius: 12px;
+      background: #e5e5e5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777777;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Section base styling */
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      color: #999999;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin: 0 0 1.5rem;
+    }
+
+    /* About section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+      gap: 2rem;
+    }
+
+    .about-text p {
+      margin: 0 0 0.85rem;
+      color: #444444;
+    }
+
+    .about-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.75rem 0 0;
+      font-size: 0.93rem;
+      color: #444444;
+    }
+
+    .about-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .about-highlight {
+      background: #f7f7f7;
+      border-radius: 8px;
+      padding: 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Services section */
+    .services-intro {
+      max-width: 640px;
+      color: #444444;
+      margin-bottom: 1.75rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      border-radius: 10px;
+      border: 1px solid #e5e5e5;
+      padding: 1.25rem 1.25rem 1.4rem;
+      background: #ffffff;
+    }
+
+    .service-name {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      font-size: 1rem;
+    }
+
+    .service-tag {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #999999;
+      margin-bottom: 0.6rem;
+    }
+
+    .service-desc {
+      font-size: 0.9rem;
+      color: #555555;
+      margin-bottom: 0.8rem;
+    }
+
+    .service-meta {
+      font-size: 0.8rem;
+      color: #777777;
+    }
+
+    @media (max-width: 980px) {
+      .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Content/Articles section */
+    .content-intro {
+      max-width: 640px;
+      color: #444444;
+      margin-bottom: 1.75rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.2fr);
+      gap: 2rem;
+    }
+
+    .content-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .content-item {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .content-item:last-child {
+      border-bottom: none;
+    }
+
+    .content-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999999;
+      margin-bottom: 0.2rem;
+    }
+
+    .content-title {
+      font-size: 0.98rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .content-excerpt {
+      font-size: 0.87rem;
+      color: #666666;
+    }
+
+    .content-meta {
+      font-size: 0.78rem;
+      color: #999999;
+      margin-top: 0.25rem;
+    }
+
+    .content-sidebar {
+      border-radius: 10px;
+      border: 1px solid #e5e5e5;
+      padding: 1.25rem 1.25rem 1.4rem;
+      background: #fafafa;
+      font-size: 0.9rem;
+      color: #555555;
+    }
+
+    .content-sidebar h3 {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.4rem;
+    }
+
+    .content-sidebar p {
+      margin-top: 0.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .content-sidebar small {
+      font-size: 0.78rem;
+      color: #999999;
+    }
+
+    @media (max-width: 900px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Testimonials section */
+    .testimonials-intro {
+      max-width: 640px;
+      color: #444444;
+      margin-bottom: 1.75rem;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .testimonial-card {
+      border-radius: 10px;
+      border: 1px solid #e5e5e5;
+      padding: 1.1rem 1.2rem 1.3rem;
+      background: #ffffff;
+      font-size: 0.9rem;
+      color: #444444;
+    }
+
+    .testimonial-quote {
+      margin-bottom: 0.7rem;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.78rem;
+      color: #999999;
+    }
+
+    @media (max-width: 980px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* FAQ section */
+    .faq-intro {
+      max-width: 640px;
+      color: #444444;
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item {
+      border-top: 1px solid #f0f0f0;
+      padding: 0.85rem 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .faq-question {
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-answer {
+      font-size: 0.88rem;
+      color: #555555;
+    }
+
+    /* Contact / CTA section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.4fr);
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .contact-text {
+      color: #444444;
+    }
+
+    .contact-text p {
+      margin: 0 0 0.9rem;
+    }
+
+    .contact-meta {
+      font-size: 0.9rem;
+      color: #555555;
+    }
+
+    .contact-meta a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .contact-form {
+      border-radius: 10px;
+      border: 1px solid #e5e5e5;
+      padding: 1.4rem 1.4rem 1.6rem;
+      background: #fafafa;
+    }
+
+    .form-row {
+      margin-bottom: 0.9rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      font: inherit;
+      padding: 0.5rem 0.6rem;
+      border-radius: 4px;
+      border: 1px solid #cccccc;
+      background: #ffffff;
+    }
+
+    .form-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-helper {
+      font-size: 0.78rem;
+      color: #999999;
+      margin-top: 0.15rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #f0f0f0;
+      padding: 1.5rem 1.5rem 2rem;
+      font-size: 0.83rem;
+      color: #888888;
+    }
+
+    .footer-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .footer-links a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#page" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Global navigation -->
+  <header>
+    <div class="nav container">
+      <div class="brand">Mohammed Al‑Ghurabi, MBBS</div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        Menu
+      </button>
+      <nav id="primary-navigation" aria-label="Primary navigation">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#content">Insights</a>
+          <a href="#testimonials">Feedback</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="nav-contacts">
+        <a href="mailto:mhd.alghurabi@gmail.com">Email</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <span>Riyadh, Saudi Arabia</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="page">
+    <!-- Hero section -->
+    <!-- Hero section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div>
+          <p class="hero-kicker">Medical clarity for modern care</p>
+          <h1 class="hero-title" id="hero-heading">
+            Helping patients and healthcare teams make confident, evidence‑based decisions.
+          </h1>
+          <p class="hero-subtitle">
+            Mohammed Al‑Ghurabi, MBBS, is a Riyadh‑based medical professional supporting patients,
+            families, and healthcare organizations with clear, practical guidance grounded in
+            clinical expertise.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Request a consultation</a>
+            <a href="#content" class="btn btn-secondary">Explore medical insights</a>
+          </div>
+          <div class="hero-meta">
+            <span>📍 Riyadh, Saudi Arabia</span>
+            <span>📧 <a href="mailto:mhd.alghurabi@gmail.com">mhd.alghurabi@gmail.com</a></span>
+            <span>🔗 <a href="https://www.linkedin.com" target="_blank" rel="noopener">Connect on LinkedIn</a></span>
+          </div>
+        </div>
+        <div aria-hidden="true">
+          <div class="hero-photo">
+            Professional portrait placeholder<br>
+            (Insert your photo here)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <!-- About section -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="section-label">Profile</p>
+        <h2 class="section-title" id="about-heading">About Mohammed Al‑Ghurabi, MBBS</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Mohammed Al‑Ghurabi is a medical professional trained in evidence‑based practice,
+              with a focus on clear communication and practical, patient‑centred care in Riyadh,
+              Saudi Arabia.
+            </p>
+            <p>
+              Across clinical settings and advisory work, he helps patients, families, and
+              healthcare leaders translate complex medical information into calm, confident
+              decisions they can act on.
+            </p>
+            <p>
+              His work bridges bedside medicine, structured medical writing, and strategic
+              consultation for healthcare organizations looking to raise the standard and clarity
+              of care.
+            </p>
+            <ul class="about-list" aria-label="Snapshot of expertise">
+              <li>Clinical background: MBBS with experience across pediatric and general practice.</li>
+              <li>Focus areas: Clear explanation, risk communication, and shared decision‑making.</li>
+              <li>Audience: Patients, families, clinicians, and healthcare organizations.</li>
+            </ul>
+          </div>
+          <aside class="about-highlight" aria-label="Ways to work together">
+            <strong>How Mohammed can support you:</strong>
+            <p>
+              Whether you are preparing for a consultation, planning a procedure, or designing a
+              new healthcare initiative, Mohammed helps you navigate options with structured,
+              clinically informed guidance.
+            </p>
+            <p>
+              Engagements range from one‑to‑one consultations and second‑opinion preparation to
+              ongoing advisory support for healthcare providers and organizations.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / What I do -->
+    <!-- Services section -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <p class="section-label">Services</p>
+        <h2 class="section-title" id="services-heading">How Mohammed can help</h2>
+        <p class="services-intro">
+          The core of Mohammed’s work is making medical decisions clearer, safer, and easier to
+          act on for patients, families, and healthcare teams.
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <p class="service-tag">For patients & families</p>
+            <h3 class="service-name">Pre‑consultation & second‑opinion preparation</h3>
+            <p class="service-desc">
+              Structured support to help you understand your diagnosis, organize your questions,
+              and walk into medical appointments prepared to use your time well.
+            </p>
+            <p class="service-meta">
+              Typical format: 45–60 minute remote sessions with a written summary of key points.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-tag">For healthcare teams</p>
+            <h3 class="service-name">Clinical communication & patient education</h3>
+            <p class="service-desc">
+              Development and review of clear patient information materials, consent explanations,
+              and care pathways that patients can understand and trust.
+            </p>
+            <p class="service-meta">
+              Ideal for clinics, hospitals, and digital health products seeking clearer messaging.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-tag">For organizations</p>
+            <h3 class="service-name">Medical advisory & strategic input</h3>
+            <p class="service-desc">
+              Ongoing advisory support on medical content, risk framing, and clinical relevance
+              for healthcare, education, and digital health initiatives.
+            </p>
+            <p class="service-meta">
+              Available on a project or retainer basis for organizations in Saudi Arabia or online.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-tag">For professionals</p>
+            <h3 class="service-name">Clinician‑to‑clinician consultations</h3>
+            <p class="service-desc">
+              Peer‑level discussions on complex cases, communication approaches, or patient‑facing
+              materials to support better shared decision‑making.
+            </p>
+            <p class="service-meta">
+              Discreet, structured sessions focused on clarity, ethics, and patient safety.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-tag">Education</p>
+            <h3 class="service-name">Talks, workshops & content</h3>
+            <p class="service-desc">
+              Sessions for clinicians, trainees, or health organizations on topics such as
+              medical decision‑making, communication, and patient experience.
+            </p>
+            <p class="service-meta">
+              Available in person in Riyadh or virtually for regional and international audiences.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <p class="service-tag">Online audience</p>
+            <h3 class="service-name">Medical insights & writing</h3>
+            <p class="service-desc">
+              Evidence‑informed articles, summaries, and frameworks that translate complex medical
+              topics into accessible language for non‑specialists.
+            </p>
+            <p class="service-meta">
+              Ideal for digital platforms, patient portals, and health communication initiatives.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content / Insights section -->
+    <!-- Insights section -->
+    <section id="content" aria-labelledby="content-heading">
+      <div class="container">
+        <p class="section-label">Insights</p>
+        <h2 class="section-title" id="content-heading">Articles, summaries & tools</h2>
+        <p class="content-intro">
+          Mohammed regularly develops practical content to help patients and professionals think
+          more clearly about diagnosis, risk, and treatment options.
+        </p>
+
+        <div class="content-grid">
+          <div>
+            <ul class="content-list" aria-label="Featured content examples">
+              <li class="content-item">
+                <p class="content-kicker">Article</p>
+                <h3 class="content-title">A simple framework for preparing for a complex medical appointment</h3>
+                <p class="content-excerpt">
+                  A step‑by‑step approach to organizing your questions, understanding your options,
+                  and leaving with a plan you feel comfortable with.
+                </p>
+                <p class="content-meta">For: Patients & families · Approx. 8‑minute read</p>
+              </li>
+              <li class="content-item">
+                <p class="content-kicker">Summary</p>
+                <h3 class="content-title">Explaining risk and uncertainty in everyday language</h3>
+                <p class="content-excerpt">
+                  Key ideas clinicians can use to explain probabilities, benefits, and side
+                  effects without overwhelming patients.
+                </p>
+                <p class="content-meta">For: Clinicians & health educators</p>
+              </li>
+              <li class="content-item">
+                <p class="content-kicker">Guide</p>
+                <h3 class="content-title">Designing patient information that people actually read</h3>
+                <p class="content-excerpt">
+                  Practical principles for designing leaflets, digital content, and discharge
+                  summaries that patients can understand and act on.
+                </p>
+                <p class="content-meta">For: Clinics, hospitals & digital health teams</p>
+              </li>
+            </ul>
+          </div>
+          <aside class="content-sidebar">
+            <h3>Stay updated</h3>
+            <p>
+              Want new articles, summaries, and practical tools in your inbox from time to time?
+              Join the email list for occasional updates from Mohammed.
+            </p>
+            <form aria-label="Newsletter subscription (placeholder)">
+              <div class="form-row">
+                <label class="form-label" for="newsletter-email">Email address</label>
+                <input
+                  id="newsletter-email"
+                  type="email"
+                  class="form-input"
+                  name="email"
+                  placeholder="you@example.com"
+                  aria-required="true">
+                <p class="form-helper">Demo only – integrate with your email platform.</p>
+              </div>
+              <button type="submit" class="btn btn-primary">Join the list</button>
+            </form>
+            <p>
+              <small>You can unsubscribe at any time. Your details will be kept confidential.</small>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / Feedback -->
+    <!-- Testimonials section -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <p class="section-label">Feedback</p>
+        <h2 class="section-title" id="testimonials-heading">What people say</h2>
+        <p class="testimonials-intro">
+          Below are examples of the kind of feedback Mohammed’s work aims to earn from patients,
+          colleagues, and partners. Replace these with real testimonials as they become available.
+        </p>
+
+        <div class="testimonials-grid" aria-label="Example testimonials">
+          <figure class="testimonial-card">
+            <blockquote class="testimonial-quote">
+              “Mohammed helped our family understand a difficult diagnosis and plan the questions
+              we needed to ask. We left the consultation more calm, informed, and in control.”
+            </blockquote>
+            <figcaption>
+              <p class="testimonial-name">Parent of pediatric patient</p>
+              <p class="testimonial-role">Riyadh</p>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote class="testimonial-quote">
+              “His ability to turn complex clinical information into clear, respectful patient
+              communication has raised the standard of how our team shares information.”
+            </blockquote>
+            <figcaption>
+              <p class="testimonial-name">Senior clinician</p>
+              <p class="testimonial-role">Tertiary care hospital</p>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial-card">
+            <blockquote class="testimonial-quote">
+              “As an advisor, Mohammed combines clinical insight with structured thinking. His
+              input has been invaluable in shaping our healthcare content and patient journeys.”
+            </blockquote>
+            <figcaption>
+              <p class="testimonial-name">Healthcare project lead</p>
+              <p class="testimonial-role">Digital health organization</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <!-- FAQ section -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <p class="section-label">FAQ</p>
+        <h2 class="section-title" id="faq-heading">Questions you may have</h2>
+        <p class="faq-intro">
+          If you are considering working with Mohammed for the first time, these answers outline
+          how engagements typically work.
+        </p>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Who does Mohammed typically work with?</h3>
+          <p class="faq-answer">
+            Mohammed works with individual patients and families, clinicians seeking clearer
+            communication, and healthcare organizations that want more effective medical content
+            and patient education.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Is this a replacement for my treating physician?</h3>
+          <p class="faq-answer">
+            No. Mohammed’s role is to complement, not replace, your clinical team. He helps you
+            better understand information you have received so that you can participate more
+            effectively in decisions with your treating physicians.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you offer remote consultations outside Riyadh?</h3>
+          <p class="faq-answer">
+            Yes. Many advisory sessions take place online, making it possible to support patients
+            and healthcare teams both within Saudi Arabia and internationally, subject to
+            professional and regulatory considerations.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How are fees structured?</h3>
+          <p class="faq-answer">
+            Fees depend on the type of support required – for example, a single pre‑consultation
+            session versus ongoing advisory work for an organization. You will receive a clear,
+            written outline of scope and costs before any engagement begins.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How can I check if Mohammed is the right fit?</h3>
+          <p class="faq-answer">
+            You can start with a brief introductory call to clarify your needs and explore whether
+            Mohammed’s experience aligns with your situation. If not, you will be advised
+            accordingly and, where possible, directed to more appropriate resources.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Call to action -->
+    <!-- Contact section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-text">
+          <p class="section-label">Contact</p>
+          <h2 class="section-title" id="contact-heading">Start a conversation</h2>
+          <p>
+            If you would like support as a patient, clinician, or organization, you can reach
+            Mohammed directly using the form or the contact details below.
+          </p>
+          <p class="contact-meta">
+            📧 Email:
+            <a href="mailto:mhd.alghurabi@gmail.com">mhd.alghurabi@gmail.com</a><br>
+            📞 Phone: <a href="tel:+966504827442">(+966) 50 482 7442</a><br>
+            🔗 LinkedIn:
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener">View profile</a><br>
+            📍 Location: Riyadh, Saudi Arabia (with online availability)
+          </p>
+          <p>
+            Please do not include urgent or emergency matters in this form. In case of a medical
+            emergency, contact local emergency services or visit the nearest emergency department.
+          </p>
+        </div>
+        <div>
+          <form class="contact-form" aria-label="Contact form (placeholder)">
+            <div class="form-row">
+              <label class="form-label" for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="form-input"
+                placeholder="Your full name"
+                aria-required="true">
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="form-input"
+                placeholder="you@example.com"
+                aria-required="true">
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="role">Who are you?</label>
+              <input
+                id="role"
+                name="role"
+                type="text"
+                class="form-input"
+                placeholder="Patient, clinician, organization, etc.">
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="message">How can Mohammed help?</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="Briefly describe your situation or project."
+                aria-required="true"></textarea>
+              <p class="form-helper">
+                Do not include highly sensitive personal or medical details. A more secure channel
+                can be arranged if needed.
+              </p>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        © <span id="year"></span> Mohammed Al‑Ghurabi, MBBS. All rights reserved.
+      </div>
+      <div class="footer-links" aria-label="Footer links">
+        <a href="#page">Back to top</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Basic JS for mobile navigation and dynamic year
+
+    // Toggle mobile nav
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navContacts = document.querySelector('.nav-contacts');
+
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navContacts.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Set current year in footer
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
